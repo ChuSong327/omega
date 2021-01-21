@@ -20,7 +20,6 @@ export default function View(props) {
             script.id = scriptId;
             script.crossOrigin = '';
             script.src = `${host}${files['main.js']}`;
-            console.log('script', script);
             script.onload = renderView;
             document.head.appendChild(script);
           });
